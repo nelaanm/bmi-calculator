@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lookscout">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="form">
+            <form action="/" method="get">
+                <div class="form-title">
+                    <h2>Check your BMI</h2>
+                </div>
+                <div class="form-body">
+                    <div class="form-input">
+                        <div class="form-item">
+                            <p style="text-align: center; "><b>Enter your weight and height below to check your BMI results</b></p>
+                        </div>
+                        <div class="form-item">
+                            <label for="age">Age</label>
+                            <input type="number" name="age" id="age" placeholder="Put your age in here" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="weight">Weight (Kg)</label>
+                            <input type="number" name="weight" id="weight" placeholder="Put your weight in here" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="height">Height (Cm)</label>
+                            <input type="number" name="height" id="height" placeholder="Put your height in here" required>
+                        </div>
+                    </div>
+                    <div class="form-end">
+                        <div class="form-button">
+                            <button class="Calculate" type="submit" id="submit-form" onclick="calculate();">Calculate BMI</button>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <p>Your BMI is</p>
+                        <div id="result">00.00</div>
+                        <p class="comment"></p>
+                      </div>
+                </div>
+            </form>
+        </div>
+        <div class="main-bg">
+            <img src="asset/hero-left.png" alt="hero image">
+            <img src="asset/hero-right.png" alt="hero image">
+        </div>
+
+        <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalText"></p>
+      </div></div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/89e8e6eb78.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
